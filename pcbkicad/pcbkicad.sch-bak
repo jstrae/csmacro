@@ -317,32 +317,6 @@ F 3 "" H 3200 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
-U 1 1 5FC49B27
-P 4350 2250
-F 0 "SW1" H 4350 2535 50  0000 C CNN
-F 1 "SW_Push" H 4350 2444 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 4350 2450 50  0001 C CNN
-F 3 "~" H 4350 2450 50  0001 C CNN
-	1    4350 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 2250 3900 2250
-Wire Wire Line
-	3900 2250 3900 2300
-$Comp
-L power:GND #PWR0108
-U 1 1 5FC4DDE7
-P 3900 2300
-F 0 "#PWR0108" H 3900 2050 50  0001 C CNN
-F 1 "GND" H 3905 2127 50  0000 C CNN
-F 2 "" H 3900 2300 50  0001 C CNN
-F 3 "" H 3900 2300 50  0001 C CNN
-	1    3900 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_ST_STM32F0:STM32F072CBTx U2
 U 1 1 5FC50A36
 P 5250 3550
@@ -874,4 +848,32 @@ F 3 "" H 5750 1850 50  0001 C CNN
 	1    5750 1850
 	1    0    0    -1  
 $EndComp
+Text GLabel 6000 3350 2    50   Input ~ 0
+COL0
+Text GLabel 6000 3450 2    50   Input ~ 0
+COL1
+Text GLabel 6000 3550 2    50   Input ~ 0
+COL2
+Text GLabel 6000 3650 2    50   Input ~ 0
+COL3
+Text GLabel 6000 3750 2    50   Input ~ 0
+COL4
+Text GLabel 6000 3850 2    50   Input ~ 0
+ROW0
+Text GLabel 6000 3950 2    50   Input ~ 0
+ROW1
+Wire Wire Line
+	6000 3950 5850 3950
+Wire Wire Line
+	6000 3850 5850 3850
+Wire Wire Line
+	6000 3750 5850 3750
+Wire Wire Line
+	6000 3650 5850 3650
+Wire Wire Line
+	6000 3550 5850 3550
+Wire Wire Line
+	6000 3350 5850 3350
+Wire Wire Line
+	6000 3450 5850 3450
 $EndSCHEMATC
