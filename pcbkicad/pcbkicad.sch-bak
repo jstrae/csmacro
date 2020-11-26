@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F072C8Tx U1
-U 1 1 5FBF2E8D
-P 5250 3550
-F 0 "U1" H 5900 1900 50  0000 C CNN
-F 1 "STM32F072C8Tx" H 5900 1800 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4650 2150 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 5250 3550 50  0001 C CNN
-	1    5250 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:AMS1117-3.3 U?
 U 1 1 5FC09823
 P 2600 1400
@@ -353,4 +342,140 @@ F 3 "" H 3900 2300 50  0001 C CNN
 	1    3900 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L MCU_ST_STM32F0:STM32F072CBTx U?
+U 1 1 5FC50A36
+P 5250 3550
+F 0 "U?" H 5200 1961 50  0000 C CNN
+F 1 "STM32F072CBTx" H 5200 1870 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4650 2150 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 2650 0    50   Input ~ 0
+HSE_in
+Wire Wire Line
+	4450 2650 4550 2650
+Text GLabel 4450 2750 0    50   Input ~ 0
+HSE_out
+Wire Wire Line
+	4450 2750 4550 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5FC5F862
+P 7100 2650
+F 0 "#PWR?" H 7100 2400 50  0001 C CNN
+F 1 "GND" H 7105 2477 50  0000 C CNN
+F 2 "" H 7100 2650 50  0001 C CNN
+F 3 "" H 7100 2650 50  0001 C CNN
+	1    7100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND24 HSE?
+U 1 1 5FC5C822
+P 7100 2350
+F 0 "HSE?" H 6700 2600 50  0000 L CNN
+F 1 "16Mhz" H 6700 2500 50  0000 L CNN
+F 2 "" H 7100 2350 50  0001 C CNN
+F 3 "~" H 7100 2350 50  0001 C CNN
+	1    7100 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 2350 0    50   Input ~ 0
+HSE_in
+Wire Wire Line
+	6700 2350 6800 2350
+Text GLabel 8000 2350 2    50   Input ~ 0
+HSE_out
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FC68E56
+P 7750 2350
+F 0 "R?" V 7545 2350 50  0000 C CNN
+F 1 "220" V 7636 2350 50  0000 C CNN
+F 2 "" H 7750 2350 50  0001 C CNN
+F 3 "~" H 7750 2350 50  0001 C CNN
+	1    7750 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FC6A2F6
+P 7450 2550
+F 0 "C?" H 7542 2596 50  0000 L CNN
+F 1 "12p" H 7542 2505 50  0000 L CNN
+F 2 "" H 7450 2550 50  0001 C CNN
+F 3 "~" H 7450 2550 50  0001 C CNN
+	1    7450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FC6AE31
+P 6800 2550
+F 0 "C?" H 6600 2500 50  0000 L CNN
+F 1 "12p" H 6500 2400 50  0000 L CNN
+F 2 "" H 6800 2550 50  0001 C CNN
+F 3 "~" H 6800 2550 50  0001 C CNN
+	1    6800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2650 7300 2650
+Wire Wire Line
+	7100 2550 7100 2650
+Connection ~ 7100 2650
+Wire Wire Line
+	6800 2650 7100 2650
+Wire Wire Line
+	6800 2450 6800 2350
+Connection ~ 6800 2350
+Wire Wire Line
+	6800 2350 6950 2350
+Wire Wire Line
+	7450 2450 7450 2350
+Wire Wire Line
+	7450 2350 7250 2350
+Wire Wire Line
+	7450 2350 7650 2350
+Connection ~ 7450 2350
+Wire Wire Line
+	7850 2350 8000 2350
+Wire Wire Line
+	7100 2150 7300 2150
+Wire Wire Line
+	7300 2150 7300 2650
+Connection ~ 7300 2650
+Wire Wire Line
+	7300 2650 7100 2650
+Text GLabel 4450 2450 0    50   Input ~ 0
+BOOT0
+Wire Wire Line
+	4450 2450 4550 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5FC7C779
+P 6450 3550
+F 0 "#PWR?" H 6450 3300 50  0001 C CNN
+F 1 "GND" H 6455 3377 50  0000 C CNN
+F 2 "" H 6450 3550 50  0001 C CNN
+F 3 "" H 6450 3550 50  0001 C CNN
+	1    6450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FC7DCB6
+P 6450 3450
+F 0 "R?" H 6518 3496 50  0000 L CNN
+F 1 "10k" H 6518 3405 50  0000 L CNN
+F 2 "" H 6450 3450 50  0001 C CNN
+F 3 "~" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6450 3350 1    50   Input ~ 0
+BOOT0
 $EndSCHEMATC
