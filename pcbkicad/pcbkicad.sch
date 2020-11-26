@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F072C8Tx U1
-U 1 1 5FBF2E8D
-P 5250 3550
-F 0 "U1" H 5900 1900 50  0000 C CNN
-F 1 "STM32F072C8Tx" H 5900 1800 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4650 2150 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 5250 3550 50  0001 C CNN
-	1    5250 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:AMS1117-3.3 U?
 U 1 1 5FC09823
 P 2600 1400
@@ -325,6 +314,43 @@ F 1 "GND" H 3205 3427 50  0000 C CNN
 F 2 "" H 3200 3600 50  0001 C CNN
 F 3 "" H 3200 3600 50  0001 C CNN
 	1    3200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FC49B27
+P 4350 2250
+F 0 "SW?" H 4350 2535 50  0000 C CNN
+F 1 "SW_Push" H 4350 2444 50  0000 C CNN
+F 2 "" H 4350 2450 50  0001 C CNN
+F 3 "~" H 4350 2450 50  0001 C CNN
+	1    4350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2250 3900 2250
+Wire Wire Line
+	3900 2250 3900 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5FC4DDE7
+P 3900 2300
+F 0 "#PWR?" H 3900 2050 50  0001 C CNN
+F 1 "GND" H 3905 2127 50  0000 C CNN
+F 2 "" H 3900 2300 50  0001 C CNN
+F 3 "" H 3900 2300 50  0001 C CNN
+	1    3900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F0:STM32F072CBTx U?
+U 1 1 5FC50A36
+P 5250 3550
+F 0 "U?" H 5200 1961 50  0000 C CNN
+F 1 "STM32F072CBTx" H 5200 1870 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4650 2150 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 5250 3550 50  0001 C CNN
+	1    5250 3550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
