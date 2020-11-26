@@ -514,4 +514,75 @@ Wire Wire Line
 	3650 3350 3650 3500
 Wire Wire Line
 	3650 3500 3200 3500
+Text GLabel 6100 4450 2    50   Input ~ 0
+D-
+Text GLabel 6100 4550 2    50   Input ~ 0
+D+
+Wire Wire Line
+	6100 4550 5850 4550
+Wire Wire Line
+	6100 4450 5850 4450
+Text Notes 7350 7500 0    50   ~ 0
+CSMACRO
+Text Notes 8150 7650 0    50   ~ 0
+11/26/2020
+Wire Wire Line
+	1000 2950 850  2950
+Wire Wire Line
+	850  2950 850  3050
+Connection ~ 1000 2950
+Wire Wire Line
+	850  3350 850  3500
+Wire Wire Line
+	850  3500 1350 3500
+Connection ~ 1350 3500
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FC96AD3
+P 8950 3400
+F 0 "J?" H 9030 3392 50  0000 L CNN
+F 1 "USBDaughterboard" H 9030 3301 50  0000 L CNN
+F 2 "" H 8950 3400 50  0001 C CNN
+F 3 "~" H 8950 3400 50  0001 C CNN
+	1    8950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3300 8600 3300
+Wire Wire Line
+	8600 3300 8600 3200
+$Comp
+L power:VCC #PWR?
+U 1 1 5FC9F18A
+P 8600 3200
+F 0 "#PWR?" H 8600 3050 50  0001 C CNN
+F 1 "VCC" H 8615 3373 50  0000 C CNN
+F 2 "" H 8600 3200 50  0001 C CNN
+F 3 "" H 8600 3200 50  0001 C CNN
+	1    8600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCA0124
+P 8600 3700
+F 0 "#PWR?" H 8600 3450 50  0001 C CNN
+F 1 "GND" H 8605 3527 50  0000 C CNN
+F 2 "" H 8600 3700 50  0001 C CNN
+F 3 "" H 8600 3700 50  0001 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3600 8600 3600
+Wire Wire Line
+	8600 3600 8600 3700
+Text GLabel 8450 3400 0    50   Input ~ 0
+D-
+Text GLabel 8450 3500 0    50   Input ~ 0
+D+
+Wire Wire Line
+	8450 3500 8750 3500
+Wire Wire Line
+	8450 3400 8750 3400
 $EndSCHEMATC

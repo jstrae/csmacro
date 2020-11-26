@@ -478,4 +478,62 @@ F 3 "~" H 6450 3450 50  0001 C CNN
 $EndComp
 Text GLabel 6450 3350 1    50   Input ~ 0
 BOOT0
+Wire Wire Line
+	5250 1900 5450 1900
+Wire Wire Line
+	5450 1900 5450 2050
+Connection ~ 5250 1900
+$Comp
+L Device:C C?
+U 1 1 5FC84E72
+P 850 3200
+F 0 "C?" H 735 3154 50  0000 R CNN
+F 1 "100n" H 735 3245 50  0000 R CNN
+F 2 "" H 888 3050 50  0001 C CNN
+F 3 "~" H 850 3200 50  0001 C CNN
+	1    850  3200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FC855A9
+P 3650 3200
+F 0 "C?" H 3535 3154 50  0000 R CNN
+F 1 "4.7u" H 3535 3245 50  0000 R CNN
+F 2 "" H 3688 3050 50  0001 C CNN
+F 3 "~" H 3650 3200 50  0001 C CNN
+	1    3650 3200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3650 3050 3650 2950
+Wire Wire Line
+	3650 2950 3200 2950
+Connection ~ 3200 2950
+Wire Wire Line
+	3650 3350 3650 3500
+Wire Wire Line
+	3650 3500 3200 3500
+Text GLabel 6100 4450 2    50   Input ~ 0
+D-
+Text GLabel 6100 4550 2    50   Input ~ 0
+D+
+Wire Wire Line
+	6100 4550 5850 4550
+Wire Wire Line
+	6100 4450 5850 4450
+Text Notes 7350 7500 0    50   ~ 0
+CSMACRO
+Text Notes 8150 7650 0    50   ~ 0
+11/26/2020
+Wire Wire Line
+	1000 2950 850  2950
+Wire Wire Line
+	850  2950 850  3050
+Connection ~ 1000 2950
+Wire Wire Line
+	850  3350 850  3500
+Wire Wire Line
+	850  3500 1350 3500
+Connection ~ 1350 3500
 $EndSCHEMATC
